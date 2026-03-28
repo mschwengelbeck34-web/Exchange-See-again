@@ -1,0 +1,128 @@
+/* Allgemeines Layout */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif; /* Runde Schrift für Text */
+  text-align: center;
+  background: linear-gradient(180deg, #1a1a1a, #2a2a2a);
+  color: #e0e0e0;
+  overflow-x: hidden; /* verhindert horizontales Scrollen */
+}
+
+/* Maximalbreite der Seite, zentriert */
+body > * {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* HEADER */
+.banner {
+  background: linear-gradient(90deg, #2b2b2b, #3a3a3a);
+  color: white;
+  padding: 30px;
+  text-shadow: 2px 2px 5px #000; /* leichter 3D Effekt */
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.banner h2 {
+  margin: 10px 0 0 0;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* INTRO */
+.intro {
+  margin: 80px 20px;
+}
+
+/* Haupttitel „Exchange“ größer, fett, 3D */
+.main-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px #000; 
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ccc;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SPACER */
+.spacer {
+  height: 300px;
+}
+
+/* COUNTDOWN untereinander */
+.countdown {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px 0;
+}
+
+/* Jedes Countdown-Item */
+.countdown > div {
+  background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s, opacity 1s;
+}
+
+/* Hover leicht */
+.countdown > div:hover {
+  transform: scale(1.03);
+}
+
+/* Countdown-Zahlen auffällig, andere Schriftart */
+.number {
+  font-family: 'Courier New', monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 5px #000; /* leichter 3D Effekt */
+}
+
+/* Labels unter Zahlen */
+.label {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 50px 0 20px 0;
+}
+
+/* ANIMATION beim Scrollen */
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
